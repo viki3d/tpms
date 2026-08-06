@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="2.0">
+        <TextView android:textSize="24.0px" android:gravity="center" android:id="@id/tv_exchange_hint" android:layout_width="fill_parent" android:layout_height="60.0px" android:layout_marginLeft="10.0px" android:layout_marginBottom="15.0px" android:text="" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0px">
+            <Button android:textColor="#ffffffff" android:gravity="center" android:id="@id/deputy_master" android:background="@drawable/fr_fl_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/zuoqianyouqianjiaohuan" />
+            <Button android:textColor="#ffffffff" android:gravity="center" android:id="@id/mater_updown" android:background="@drawable/fl_bl_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0px" android:layout_marginRight="20.0px" android:contentDescription="@string/zuoqianzuohoujiaohuan" />
+            <Button android:textColor="#ffffffff" android:gravity="center" android:id="@id/master_cross" android:background="@drawable/fl_br_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/zuoqianyouhoujiaohuan" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <Button android:textColor="#ffffffff" android:gravity="center" android:id="@id/deputy_cross" android:background="@drawable/bl_fr_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/youqianzuohoujiaohuan" />
+            <Button android:textColor="#ffffffff" android:gravity="center" android:id="@id/deputy_updown" android:background="@drawable/fr_br_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0px" android:layout_marginRight="20.0px" android:contentDescription="@string/youqianyouhoujiaohuan" />
+            <Button android:textColor="#ffffffff" android:gravity="center" android:id="@id/back_exchange" android:background="@drawable/bl_br_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/zuohouyouhoujiaohuan" />
+        </LinearLayout>
+        <Button android:id="@id/btn_start_exchange" android:background="@drawable/btn_start_exchange_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40.0px" android:text="@string/kaishihuhuang" />
+        <Button android:id="@id/btn_cannel_exchange" android:background="@drawable/btn_cannel_exchange_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/quxiaohuhuan" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="2.0">
+        <ImageView android:id="@id/iv_exchange" android:background="@drawable/exchange_nosptires_level" android:layout_width="314.0px" android:layout_height="367.0px" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <Button android:id="@id/btn_sp_fl" android:background="@drawable/sp_fl_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/aianzuo_spjiaohuan" />
+        <Button android:id="@id/btn_sp_fr" android:background="@drawable/sp_fr_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0px" android:layout_marginBottom="8.0px" android:contentDescription="@string/qianyou_spjiaohuan" />
+        <Button android:id="@id/btn_sp_bl" android:background="@drawable/sp_bl_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/houzou_spjiaohuan" />
+        <Button android:id="@id/btn_sp_br" android:background="@drawable/sp_br_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0px" android:layout_marginBottom="5.0px" android:contentDescription="@string/houyou_spjiaohuan" />
+    </LinearLayout>
+</LinearLayout>

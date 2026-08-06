@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scrollView1" android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0px" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TableLayout android:id="@id/table2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="52.0px" android:layout_marginTop="10.0px" android:layout_marginRight="52.0px">
+        <TableRow android:background="#4d314584" android:paddingLeft="36.0px" android:layout_height="92.0px" android:layout_marginTop="1.0px">
+            <TextView android:textSize="20.0px" android:textColor="#ff666666" android:gravity="center_vertical" android:layout_width="1024.0px" android:layout_height="50.0px" android:text="@string/yichangzhudongbaojin" />
+        </TableRow>
+        <TableRow android:gravity="center_vertical" android:background="#4d314584" android:paddingLeft="36.0px">
+            <TextView android:textSize="24.0px" android:gravity="center_vertical" android:layout_width="0.0px" android:layout_height="70.0px" android:text="@string/tanchukuangbaojin" android:layout_weight="7.0" />
+            <ToggleButton android:id="@id/cb_showui_enable" android:layout_width="0.0px" android:checked="true" android:textOn="" android:textOff="" android:layout_weight="2.0" />
+        </TableRow>
+        <TableRow android:gravity="center_vertical" android:background="#4d314584" android:paddingLeft="36.0px" android:layout_marginBottom="6.0px">
+            <TextView android:textSize="24.0px" android:gravity="center_vertical" android:layout_width="0.0px" android:layout_height="70.0px" android:text="@string/shengyinbaojin" android:layout_weight="7.0" />
+            <ToggleButton android:id="@id/cb_sound_warring" android:layout_width="0.0px" android:layout_height="wrap_content" android:checked="true" android:textOn="" android:textOff="" android:layout_weight="2.0" />
+        </TableRow>
+        <TableRow android:gravity="center_vertical" android:background="#4d314584" android:paddingLeft="36.0px" android:layout_marginBottom="6.0px">
+            <TextView android:textSize="24.0px" android:gravity="center_vertical" android:layout_width="0.0px" android:layout_height="80.0px" android:text="@string/zuigaowendubaojin" android:layout_weight="2.4" />
+            <TextView android:textSize="24.0px" android:id="@id/tv_hi_temp" android:layout_width="0.0px" android:text="80度" android:layout_weight="0.8" />
+            <Button android:textSize="24.0px" android:id="@id/btn_temp_def" android:background="@drawable/btn_default_selector" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="@string/morengzhi" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/btn_temp_dec" android:background="@null" android:layout_width="0.0px" android:layout_height="wrap_content" android:src="@drawable/btn_dec_selector" android:layout_weight="0.9" />
+            <ImageButton android:id="@id/btn_temp_add" android:background="@null" android:layout_width="0.0px" android:layout_height="wrap_content" android:src="@drawable/btn_add_selector" android:layout_weight="0.9" />
+        </TableRow>
+        <TableRow android:gravity="center_vertical" android:background="#4d314584" android:paddingLeft="36.0px" android:layout_marginBottom="6.0px">
+            <TextView android:textSize="24.0px" android:gravity="center_vertical" android:layout_width="0.0px" android:layout_height="80.0px" android:text="@string/wendudanwei" android:layout_weight="2.4" />
+            <TextView android:textSize="24.0px" android:id="@id/tv_tempunit" android:layout_width="0.0px" android:text="度" android:layout_weight="0.8" />
+            <Button android:background="@drawable/btn_default_selector" android:visibility="invisible" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="@string/morengzhi" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/btn_tempunit_dec" android:background="@null" android:layout_width="0.0px" android:layout_height="wrap_content" android:src="@drawable/btn_dec_selector" android:layout_weight="0.9" />
+            <ImageButton android:id="@id/btn_tempunit_add" android:background="@null" android:layout_width="0.0px" android:layout_height="wrap_content" android:src="@drawable/btn_add_selector" android:layout_weight="0.9" />
+        </TableRow>
+        <TableRow android:gravity="center_vertical" android:background="#4d314584" android:paddingLeft="36.0px" android:layout_marginBottom="6.0px">
+            <TextView android:textSize="24.0px" android:gravity="center_vertical" android:layout_width="0.0px" android:layout_height="80.0px" android:text="@string/zuigaobaojintaiya" android:layout_weight="2.4" />
+            <TextView android:textSize="24.0px" android:id="@id/tv_hipressure" android:layout_width="0.0px" android:text="45.0" android:layout_weight="0.8" />
+            <Button android:textSize="24.0px" android:id="@id/btn_hipressure_def" android:background="@drawable/btn_default_selector" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="@string/morengzhi" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/btn_hipressure_dec" android:background="@null" android:layout_width="0.0px" android:layout_height="wrap_content" android:src="@drawable/btn_dec_selector" android:layout_weight="0.9" />
+            <ImageButton android:id="@id/btn_hipressure_add" android:background="@null" android:layout_width="0.0px" android:layout_height="wrap_content" android:src="@drawable/btn_add_selector" android:layout_weight="0.9" />
+        </TableRow>
+        <TableRow android:gravity="center_vertical" android:background="#4d314584" android:paddingLeft="36.0px" android:layout_height="92.0px" android:layout_marginBottom="6.0px">
+            <TextView android:textSize="24.0px" android:gravity="center_vertical" android:layout_width="0.0px" android:layout_height="80.0px" android:text="@string/zuidibojintaiya" android:layout_weight="2.4" />
+            <TextView android:textSize="24.0px" android:id="@id/tv_lopressure" android:layout_width="0.0px" android:text="45.0" android:layout_weight="0.8" />
+            <Button android:textSize="24.0px" android:id="@id/btn_lowpressure_def" android:background="@drawable/btn_default_selector" android:layout_width="0.0px" android:layout_height="wrap_content" android:text="@string/morengzhi" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/btn_lowpressure_dec" android:background="@null" android:layout_width="0.0px" android:layout_height="wrap_content" android:src="@drawable/btn_dec_selector" android:layout_weight="0.9" />
+            <ImageButton android:id="@id/btn_lowpressure_add" android:background="@null" android:layout_width="0.0px" android:layout_height="wrap_content" android:src="@drawable/btn_add_selector" android:layout_weight="0.9" />
+        </TableRow>
+        <TableRow android:gravity="center_vertical" android:background="#4d314584" android:paddingLeft="36.0px" android:layout_marginBottom="6.0px">
+            <TextView android:textSize="24.0px" android:gravity="center_vertical" android:layout_width="0.0px" android:layout_height="80.0px" android:text="@string/taiyadanwei" android:layout_weight="2.4" />
+            <TextView android:textSize="24.0px" android:id="@id/tv_pressureunit" android:layout_width="0.0px" android:text="Psi" android:layout_weight="0.8" />
+            <ImageButton android:background="@null" android:visibility="invisible" android:layout_width="0.0px" android:layout_height="wrap_content" android:layout_weight="1.0" />
+            <ImageButton android:id="@id/btn_pressureunit_dec" android:background="@null" android:layout_width="0.0px" android:layout_height="wrap_content" android:src="@drawable/btn_dec_selector" android:layout_weight="0.9" />
+            <ImageButton android:id="@id/btn_pressureunit_add" android:background="@null" android:layout_width="0.0px" android:layout_height="wrap_content" android:src="@drawable/btn_add_selector" android:layout_weight="0.9" />
+        </TableRow>
+        <TableRow android:gravity="center_vertical" android:background="#4d314584" android:paddingLeft="36.0px" android:layout_marginBottom="6.0px">
+            <TextView android:textSize="24.0px" android:gravity="center_vertical" android:layout_width="0.0px" android:layout_height="80.0px" android:text="@string/dianyabaojin" android:layout_weight="7.0" />
+            <ToggleButton android:id="@id/cb_betta_warring" android:layout_width="0.0px" android:layout_height="wrap_content" android:checked="true" android:textOn="" android:textOff="" android:layout_weight="2.0" />
+        </TableRow>
+        <TableRow android:gravity="center_vertical" android:background="#4d314584" android:paddingLeft="36.0px" android:layout_marginBottom="6.0px">
+            <TextView android:textSize="24.0px" android:gravity="center_vertical" android:layout_width="0.0px" android:layout_height="80.0px" android:text="@string/lianjieyichangbaojin" android:layout_weight="7.0" />
+            <ToggleButton android:id="@id/cb_connect_warring" android:layout_width="0.0px" android:layout_height="wrap_content" android:checked="true" android:textOn="" android:textOff="" android:layout_weight="2.0" />
+        </TableRow>
+        <TableRow android:gravity="center_vertical" android:background="#4d314584" android:paddingLeft="36.0px" android:layout_marginBottom="6.0px" android:contentDescription="备胎开关">
+            <TextView android:textSize="24.0px" android:gravity="center_vertical" android:layout_width="0.0px" android:layout_height="80.0px" android:text="@string/spare_tire_enable" android:layout_weight="7.0" />
+            <ToggleButton android:id="@id/cb_spare_tire_enable" android:layout_width="0.0px" android:layout_height="wrap_content" android:checked="true" android:textOn="" android:textOff="" android:layout_weight="2.0" />
+        </TableRow>
+        <TableRow android:gravity="center_vertical" android:background="#4d314584" android:paddingLeft="36.0px" android:layout_marginBottom="6.0px">
+            <TextView android:textSize="24.0px" android:gravity="center_vertical" android:id="@id/tv_reset_all" android:layout_width="0.0px" android:layout_height="80.0px" android:text="@string/huifumorenzhi" android:layout_weight="5.0" />
+        </TableRow>
+        <TableRow android:gravity="center_vertical" android:background="#4d314584" android:paddingLeft="36.0px" android:layout_marginBottom="30.0px">
+            <TextView android:textSize="24.0px" android:gravity="center_vertical" android:layout_width="0.0px" android:layout_height="80.0px" android:text="@string/banbenxingxi" android:layout_weight="2.5" />
+            <TextView android:textSize="20.0px" android:gravity="center" android:layout_width="0.0px" android:layout_height="80.0px" android:text="V1.1.43M_USB_L9_20190510" android:layout_weight="2.5" />
+        </TableRow>
+    </TableLayout>
+</ScrollView>

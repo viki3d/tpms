@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/pagebackground" android:background="@drawable/blue_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="10.0px" android:layout_weight="30.0" android:contentDescription="空隙 填充" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="388.0" android:contentDescription="上部大容器">
+        <View android:visibility="invisible" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="113.0" android:contentDescription="空隙 填充" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="220.0" android:contentDescription="第1列">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/front_left_infos" android:background="@drawable/tires_bkinfo_level" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="150.0" android:contentDescription="主架胎压信息">
+                <TextView android:textSize="24.0px" android:gravity="center" android:id="@id/front_left_pressure" android:layout_width="fill_parent" android:layout_height="0.0px" android:text="---  Bar" android:layout_weight="1.0" />
+                <TextView android:textSize="24.0px" android:gravity="center" android:id="@id/front_left_temp" android:layout_width="fill_parent" android:layout_height="0.0px" android:text="---  ℃" android:layout_weight="1.0" />
+                <TextView android:textSize="23.0px" android:gravity="center" android:id="@id/front_left_error" android:layout_width="fill_parent" android:layout_height="0.0px" android:text="@string/lianjieyichang" android:layout_weight="1.0" />
+            </LinearLayout>
+            <View android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="45.0" android:contentDescription="空隙 填充" />
+            <LinearLayout android:orientation="vertical" android:id="@id/back_left_infos" android:background="@drawable/tires_bkinfo_level" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="150.0" android:contentDescription="主架后胎压信息">
+                <TextView android:textSize="24.0px" android:gravity="center" android:id="@id/back_left_pressure" android:layout_width="fill_parent" android:layout_height="0.0px" android:text="---  Bar" android:layout_weight="1.0" />
+                <TextView android:textSize="24.0px" android:gravity="center" android:id="@id/back_left_temp" android:layout_width="fill_parent" android:layout_height="0.0px" android:text="---  ℃" android:layout_weight="1.0" />
+                <TextView android:textSize="23.0px" android:gravity="center" android:id="@id/back_left_error" android:layout_width="fill_parent" android:layout_height="0.0px" android:text="@string/lianjieyichang" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="100.0" android:contentDescription="第2列">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0px" android:contentDescription="主架胎压连接和电池装态">
+                <TextView android:gravity="center" android:id="@id/front_left_connect" android:background="@drawable/connect_error_l" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0" />
+                <TextView android:gravity="center" android:id="@id/front_left_betta" android:background="@drawable/bettawaring" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_marginTop="15.0px" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="80.0px" android:contentDescription="主架后胎压连接和电池装态">
+                <TextView android:gravity="center" android:id="@id/back_left_connect" android:background="@drawable/connect_error_l" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0" />
+                <TextView android:gravity="center" android:id="@id/back_left_betta" android:background="@drawable/bettawaring" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_marginTop="15.0px" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0px" android:layout_weight="143.0" android:contentDescription="第3列">
+            <ImageView android:background="@drawable/ic_car" android:layout_width="114.0px" android:layout_height="257.0px" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="100.0" android:contentDescription="第4列">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0px" android:contentDescription="副架胎压连接和电池装态">
+                <TextView android:gravity="center" android:id="@id/front_right_connect" android:background="@drawable/connect_error_r" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0" />
+                <TextView android:gravity="center" android:id="@id/front_right_betta" android:background="@drawable/bettawaring" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_marginTop="15.0px" android:layout_weight="1.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="80.0px" android:contentDescription="副架后胎压连接和电池装态">
+                <TextView android:gravity="center" android:id="@id/back_right_connect" android:background="@drawable/connect_error_r" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0" />
+                <TextView android:gravity="center" android:id="@id/back_right_betta" android:background="@drawable/bettawaring" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_marginTop="15.0px" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="220.0" android:contentDescription="第5列">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/front_right_infos" android:background="@drawable/tires_bkinfo_level" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="150.0" android:contentDescription="主架胎压信息">
+                <TextView android:textSize="24.0px" android:gravity="center" android:id="@id/front_right_pressure" android:layout_width="fill_parent" android:layout_height="0.0px" android:text="---  Bar" android:layout_weight="1.0" />
+                <TextView android:textSize="24.0px" android:gravity="center" android:id="@id/front_right_temp" android:layout_width="fill_parent" android:layout_height="0.0px" android:text="---  ℃" android:layout_weight="1.0" />
+                <TextView android:textSize="23.0px" android:gravity="center" android:id="@id/front_right_error" android:layout_width="fill_parent" android:layout_height="0.0px" android:text="@string/lianjieyichang" android:layout_weight="1.0" />
+            </LinearLayout>
+            <View android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="45.0" android:contentDescription="空隙 填充" />
+            <LinearLayout android:orientation="vertical" android:id="@id/back_right_infos" android:background="@drawable/tires_bkinfo_level" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="150.0" android:contentDescription="主架后胎压信息">
+                <TextView android:textSize="24.0px" android:gravity="center" android:id="@id/back_right_pressure" android:layout_width="fill_parent" android:layout_height="0.0px" android:text="---  Bar" android:layout_weight="1.0" />
+                <TextView android:textSize="24.0px" android:gravity="center" android:id="@id/back_right_temp" android:layout_width="fill_parent" android:layout_height="0.0px" android:text="---  ℃" android:layout_weight="1.0" />
+                <TextView android:textSize="23.0px" android:gravity="center" android:id="@id/back_right_error" android:layout_width="fill_parent" android:layout_height="0.0px" android:text="@string/lianjieyichang" android:layout_weight="1.0" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:visibility="invisible" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="113.0" android:contentDescription="空隙 填充" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center|top" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="54.0" android:contentDescription="备胎容器">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_sptires_contioner" android:background="@drawable/sptires_bkinfo_level" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="备胎容器">
+            <TextView android:textSize="22.0px" android:gravity="center" android:id="@id/tv_sptires_pressure" android:layout_width="124.0px" android:layout_height="50.0px" android:text="---  Bar" />
+            <TextView android:textSize="22.0px" android:gravity="center" android:id="@id/tv_sptires_temp" android:layout_width="124.0px" android:layout_height="50.0px" android:text="---  ℃" />
+            <TextView android:id="@id/tv_sptires_error" android:visibility="gone" android:layout_width="124.0px" android:layout_height="50.0px" />
+            <TextView android:id="@id/tv_sptires_betta" android:visibility="gone" android:layout_width="124.0px" android:layout_height="50.0px" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="70.0" android:contentDescription="底部">
+        <Button android:id="@id/btn_paire_id" android:background="@drawable/btn_paire_id_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/idmapeidui" />
+        <Button android:id="@id/btn_tpms_set" android:background="@drawable/btn_tpms_set_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="70.0px" android:text="@string/taiyasheding" />
+    </LinearLayout>
+</LinearLayout>

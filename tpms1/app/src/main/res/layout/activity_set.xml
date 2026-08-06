@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/pagebackground" android:background="@drawable/blue_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="86.0px">
+        <TextView android:textSize="24.0px" android:gravity="center" android:id="@id/back_ui" android:paddingLeft="30.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/taiyasheding" android:drawableLeft="@drawable/btn_back_selector" android:contentDescription="反回的" />
+        <RadioGroup android:orientation="horizontal" android:id="@id/tablable" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="38.0px" android:layout_centerHorizontal="true">
+            <RadioButton android:textSize="26.0px" android:textColor="@drawable/txt_color_selector" android:gravity="center" android:id="@id/mainbtn_0" android:tag="com.tpms.view.SetDetailActivity" android:background="@drawable/btn_set_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="@string/settings" />
+            <RadioButton android:textSize="26.0px" android:textColor="@drawable/txt_color_selector" android:gravity="center" android:id="@id/btn_1" android:tag="com.tpms.view.SetExchangeActivity" android:background="@drawable/btn_exchange_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:text="@string/taiyahuhuan" android:layout_weight="1.0" />
+        </RadioGroup>
+    </RelativeLayout>
+    <FrameLayout android:gravity="center_horizontal" android:id="@id/fragment_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="4.0px" />
+</LinearLayout>

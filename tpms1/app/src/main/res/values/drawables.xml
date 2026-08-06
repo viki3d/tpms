@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="aux_bg_transparent">#00000000</item>
+    <item type="drawable" name="back_color">#ffe8e8e8</item>
+    <item type="drawable" name="btn_pressed">#ff33b5e5</item>
+    <item type="drawable" name="btn_transparent">#00000000</item>
+    <item type="drawable" name="notification_template_icon_bg">#3333b5e5</item>
+    <item type="drawable" name="notification_template_icon_low_bg">#0cffffff</item>
+    <item type="drawable" name="test_color">#ffcc0099</item>
+</resources>

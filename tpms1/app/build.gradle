@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion "28.0.3"
+    defaultConfig {
+        applicationId "com.syt.tpms"
+        minSdkVersion 16 // Android 4.4 KitKat
+        targetSdkVersion 27 // Android 8.1 (Oreo)
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            //proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    // UPDATE THIS BLOCK TO BYPASS THE SYSTEM PERMISSION ERROR
+    lintOptions {
+        abortOnError false
+        checkReleaseBuilds false
+        disable 'ProtectedPermissions', 'MissingPermission'
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support:support-v4:27.1.1'
+    implementation 'com.android.support:support-compat:27.1.1'
+
+//    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+}
+
+// FORCE COHERENT VERSIONS TO FIX AAPT DUPLICATE ERRORS
+configurations.all {
+    resolutionStrategy {
+        force 'com.android.support:support-v4:27.1.1'
+        force 'com.android.support:appcompat-v7:27.1.1'
+        force 'com.android.support:support-core-ui:27.1.1'
+        force 'com.android.support:support-compat:27.1.1'
+        force 'com.android.support:coordinatorlayout:27.1.1'
+    }
+}
+
+
