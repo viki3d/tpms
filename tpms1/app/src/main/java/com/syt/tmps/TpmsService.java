@@ -16,7 +16,7 @@ public class TpmsService extends Service {
         @Override // java.lang.Runnable
         public void run() {
             try {
-                ActivityManager am = (ActivityManager) TpmsService.this.getSystemService("activity");
+                ActivityManager am = (ActivityManager) TpmsService.this.getSystemService(android.content.Context.ACTIVITY_SERVICE);
                 ComponentName cn = am.getRunningTasks(1).get(0).topActivity;
                 Log.d("TestService", "pkg:" + cn.getPackageName());
                 Log.d("TestService", "cls:" + cn.getClassName());
