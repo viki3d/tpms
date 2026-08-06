@@ -17,7 +17,7 @@
                 <TextView android:textSize="23.0px" android:gravity="center" android:id="@id/back_left_error" android:layout_width="fill_parent" android:layout_height="0.0px" android:text="@string/lianjieyichang" android:layout_weight="1.0" />
             </LinearLayout>
         </LinearLayout>
-        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="100.0" android:contentDescription="第2列">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="80.0" android:contentDescription="第2列">
             <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0px" android:contentDescription="主架胎压连接和电池装态">
                 <TextView android:gravity="center" android:id="@id/front_left_connect" android:background="@drawable/connect_error_l" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0" />
                 <TextView android:gravity="center" android:id="@id/front_left_betta" android:background="@drawable/bettawaring" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_marginTop="15.0px" android:layout_weight="1.0" />
@@ -27,10 +27,14 @@
                 <TextView android:gravity="center" android:id="@id/back_left_betta" android:background="@drawable/bettawaring" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_marginTop="15.0px" android:layout_weight="1.0" />
             </LinearLayout>
         </LinearLayout>
-        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_marginTop="10.0px" android:layout_weight="143.0" android:contentDescription="第3列">
-            <ImageView android:background="@drawable/ic_car" android:layout_width="114.0px" android:layout_height="257.0px" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_marginTop="2.0px" android:layout_weight="260.0" android:contentDescription="第3列">
+
+            <ImageView
+                android:layout_width="162dp"
+                android:layout_height="350dp"
+                android:background="@drawable/ic_car" />
         </LinearLayout>
-        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="100.0" android:contentDescription="第4列">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0.0px" android:layout_height="fill_parent" android:layout_weight="80.0" android:contentDescription="第4列">
             <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0px" android:contentDescription="副架胎压连接和电池装态">
                 <TextView android:gravity="center" android:id="@id/front_right_connect" android:background="@drawable/connect_error_r" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_weight="1.0" />
                 <TextView android:gravity="center" android:id="@id/front_right_betta" android:background="@drawable/bettawaring" android:layout_width="fill_parent" android:layout_height="0.0px" android:layout_marginTop="15.0px" android:layout_weight="1.0" />
