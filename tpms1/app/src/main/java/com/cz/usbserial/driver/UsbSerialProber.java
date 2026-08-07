@@ -21,10 +21,11 @@ public class UsbSerialProber {
 
     public static ProbeTable getDefaultProbeTable() {
         ProbeTable probeTable = new ProbeTable();
-        probeTable.addDriver(FtdiSerialDriver.class);
+        // corolla
+        //probeTable.addDriver(FtdiSerialDriver.class);
         probeTable.addDriver(Ch34xSerialDriver.class);
-        probeTable.addDriver(Cp21xxSerialDriver.class);
-        probeTable.addDriver(ProlificSerialDriver.class);
+        //probeTable.addDriver(Cp21xxSerialDriver.class);
+        //probeTable.addDriver(ProlificSerialDriver.class);
         return probeTable;
     }
 
